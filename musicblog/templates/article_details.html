@@ -66,6 +66,7 @@
         </h5>
 
         <p class="small text-muted">
+            <a href="{% url 'show_profile_page' post.author.profile.id %}">Profile Page</a> |
             {% if post.author.profile.website_url %}
                  <a href="{{ post.author.profile.website_url }}" >Website</a> |
             {% endif %}
@@ -87,12 +88,14 @@
             {% endif %}
         </p>
 
-        <p class="card-text">{{ post.author.profile.bio }}</p>
+        <p class="card-text">
+            {{ post.author.profile.bio }}
+        </p>
 
       </div>
     </div>
   </div>
 </div>
 
-
+<br/><br/>
 {% endblock %}
