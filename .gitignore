@@ -1,0 +1,31 @@
+# Python
+*.pyc
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+
+#------------------------------------
+
+# Testing
+.coverage
+.vagrant
+coverage/
+screenshot/
+
+#------------------------------------
+
+# Editor
+*~
+*.swo
+*.swp
+.DS_Store
+.idea
+
+#------------------------------------
+
+# venv
+e2evenv
+
