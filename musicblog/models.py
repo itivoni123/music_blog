@@ -44,7 +44,7 @@ class Post(models.Model):
     body = RichTextField(blank=True, null=True)
     # body = models.TextField()
     post_date = models.DateField(auto_now_add=True)
-    categories = models.CharField(max_length=255, default='music')
+    category = models.CharField(max_length=255, default='music')
     snippet = models.CharField(max_length=255)
     likes = models.ManyToManyField(User, related_name='music_blog')
 
