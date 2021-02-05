@@ -141,4 +141,15 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
+
+CKEDITOR_UPLOAD_PATH = "uploads/"
+
+CKEDITOR_CONFIGS = {
+    "default": {
+        "removePlugins": "stylesheetparser",
+        'height': '100%',
+        'width': '100%',
+    }
+}
+
 # django_heroku.settings(locals())
