@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'u+j+a)dx2q_j!kpf*mqwb^%xzy48$1nmj(@)ch%=i3@ylitffi'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['djfm.herokuapp.com']
+ALLOWED_HOSTS = ['djfm.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -143,13 +143,13 @@ LOGOUT_REDIRECT_URL = 'home'
 
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
-
-CKEDITOR_CONFIGS = {
-    "default": {
-        "removePlugins": "stylesheetparser",
-        'height': '100%',
-        'width': '100%',
-    }
-}
+#
+# CKEDITOR_CONFIGS = {
+#     "default": {
+#         "removePlugins": "stylesheetparser",
+#         'height': '100%',
+#         'width': '100%',
+#     }
+# }
 
 # django_heroku.settings(locals())
