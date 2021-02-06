@@ -6,6 +6,7 @@ dist
 build
 eggs
 parts
+__pycache__/
 
 #------------------------------------
 
@@ -28,4 +29,5 @@ screenshot/
 
 # venv
 e2evenv
+dj/
 
